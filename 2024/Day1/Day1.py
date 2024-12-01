@@ -32,5 +32,3 @@ def get_difference(input):
 
 input = file_read()
 print(get_difference(input))
-
-2192892
