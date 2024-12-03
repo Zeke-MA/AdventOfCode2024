@@ -1,4 +1,5 @@
 from collections import Counter
+import datetime
 
 def file_read():
     f = open("input.txt", "r")
@@ -29,6 +30,9 @@ def get_difference(input):
     return total_diff, sim_score
 
             
-
+start_time = datetime.datetime.now()
 input = file_read()
 print(get_difference(input))
+end_time = datetime.datetime.now()
+duration = end_time - start_time
+print(f"Ran for: {duration}")
